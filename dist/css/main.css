@@ -1,3 +1,25 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
 * {
   box-sizing: border-box; }
 
@@ -6,7 +28,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/bgtemp.jpg);
@@ -22,12 +44,18 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 0.1rem;
     background: rgba(73, 73, 73, 0.5); }
