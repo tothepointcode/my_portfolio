@@ -4,7 +4,7 @@ $(()=>{
     const menuBtn = $('.menu-btn');
     const menu = $('.menu');
     const menuNav = $('.menu-nav');
-    const menuBranding = $('.btn-branding');
+    const menuBranding = $('.menu-branding');
     const navItems = document.querySelectorAll('.nav-item');
 
     //Set initial state of menu
