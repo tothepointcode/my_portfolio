@@ -4,11 +4,14 @@
   "description": "Portofolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist/"
   },
+  "homepage":"https://terracobynnha.github.io/my_portfolio",
   "author": "Terra Cobynnha",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0"
   }
 }
