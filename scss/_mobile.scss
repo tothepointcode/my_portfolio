@@ -1,7 +1,7 @@
 // Widescreens 
 @include mediaXl {
     .projects {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -10,6 +10,7 @@
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
+    
 }
 
 // Tablets and Small Laptops
@@ -63,6 +64,11 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .project-gallery {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
 }
 
 
@@ -75,4 +81,14 @@
     .projects {
         grid-template-columns: 1fr;
     }
+    
+    .return-btn{
+        display: block;
+    }
+
+    .project-description {
+        // @include projectLayout;
+        // grid-template-columns: repeat(1, 1fr) !important;
+        padding: 0rem 0.2rem 2rem 0.2rem;
+      }
 }
