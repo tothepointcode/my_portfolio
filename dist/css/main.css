@@ -162,7 +162,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job1 job2";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -180,9 +180,6 @@ main {
 
 .job-2 {
   grid-area: job2; }
-
-.job-3 {
-  grid-area: job3; }
 
 .job {
   background: #515151;
