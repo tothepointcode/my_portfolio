@@ -314,9 +314,29 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  main {
+    padding: 3rem 2rem 2rem 2rem; }
+    main#work, main#contact, main#about {
+      padding-top: 4rem;
+      padding-bottom: 4rem; }
+    main#contact h1 {
+      font-size: 5.4rem; }
   .projects {
     grid-template-columns: 1fr; }
   .return-btn {
     display: block; }
   .project-description {
     padding: 0rem 0.2rem 2rem 0.2rem; } }
+
+@media screen and (max-width: 815px) and (max-height: 420px) {
+  body#bg-img h1 {
+    line-height: 1; }
+  body#bg-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 600px;
+    z-index: -1;
+    background: rgba(68, 68, 68, 0.9); } }
