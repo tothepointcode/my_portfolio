@@ -78,6 +78,19 @@
         margin-top: 10vh;
     }
 
+    main {
+        padding: 3rem 2rem 2rem 2rem;
+
+        &#work, &#contact, &#about {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        &#contact h1 {
+            font-size: 5.4rem;
+        }
+    }
+
     .projects {
         grid-template-columns: 1fr;
     }
@@ -91,4 +104,24 @@
         // grid-template-columns: repeat(1, 1fr) !important;
         padding: 0rem 0.2rem 2rem 0.2rem;
       }
+}
+
+// Lanscape smartphone 
+@include mediaSmLandscape {
+    body#bg-img{
+        h1 {
+            line-height: 1;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            min-height: 600px;
+            z-index: -1;
+            background: rgba($primary-color, $background-opacity);
+        }
+    }
 }

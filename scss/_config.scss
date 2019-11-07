@@ -46,6 +46,12 @@ $background-opacity: 0.9;
     }
 }
 
+@mixin mediaSmLandscape {
+    @media screen and (max-width: 815px) and (max-height: 420px){
+        @content;
+    }
+}
+
 @mixin mediaMd {
     @media screen and (max-width: 768px) {
         @content;
